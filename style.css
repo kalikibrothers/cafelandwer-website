@@ -1,32 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-*, *::before, *::after{
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     font-size: 10px;
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
 }
 
-.body-container{
+.body-container {
     width: 100%;
     background-color: #573833;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     font-weight: 500;
     line-height: 100%;
 }
 
-.primary-btn{
+.primary-btn {
     display: flex;
     padding: 1.2rem 1.6rem;
     border-radius: 0.6rem;
@@ -38,15 +41,15 @@ a{
     width: fit-content;
 }
 
-.primary-btn:hover{
+.primary-btn:hover {
     padding: 1.2rem 1.42rem;
     background-color: #502925;
-   color: #d5b68d;
+    color: #d5b68d;
     font-size: 1.65rem;
     font-weight: 600;
 }
 
-.secondary-btn{
+.secondary-btn {
     display: flex;
     padding: 1.2rem 1.6rem;
     border-radius: 0.6rem;
@@ -57,14 +60,14 @@ a{
     width: fit-content;
 }
 
-.secondary-btn:hover{
+.secondary-btn:hover {
     padding: 1.15rem 1.42rem;
     background-color: #d5b68d;
     font-size: 1.65rem;
     font-weight: 600;
 }
 
-.primary-btn-lg{
+.primary-btn-lg {
     display: flex;
     padding: 1.6rem 2.4rem;
     border-radius: 0.6rem;
@@ -76,7 +79,7 @@ a{
     font-weight: 400;
 }
 
-.primary-btn-lg:hover{
+.primary-btn-lg:hover {
     padding: 1.55rem 2.08rem;
     background-color: #502925;
     color: #d5b68d;
@@ -84,7 +87,7 @@ a{
     font-weight: 600;
 }
 
-.primary-btn-light{
+.primary-btn-light {
     display: flex;
     padding: 1.6rem 2.4rem;
     border-radius: 0.6rem;
@@ -95,12 +98,12 @@ a{
     width: fit-content;
 }
 
-.primary-btn-light:hover{
+.primary-btn-light:hover {
     background-color: #d5b68d;
     font-weight: 600;
 }
 
-.secondary-btn-lg{
+.secondary-btn-lg {
     display: flex;
     padding: 1.6rem 2.4rem;
     border-radius: 0.6rem;
@@ -111,29 +114,29 @@ a{
     width: fit-content;
 }
 
-.secondary-btn-lg:hover{
+.secondary-btn-lg:hover {
     padding: 1.55rem 1.97rem;
     background-color: #d5b68d;
     font-size: 2.1rem;
     font-weight: 600;
 }
 
-h3{
+h3 {
     font-size: 2rem;
 }
 
-h1{
+h1 {
     font-size: 4.2rem;
     line-height: 145%;
 }
 
-h2{
+h2 {
     font-size: 3.6rem;
     line-height: 110%;
 }
 
 
-.navbar{
+.navbar {
     width: 100%;
     background-color: #F8EBDA;
     padding: 1.6rem 7.2rem;
@@ -142,29 +145,29 @@ h2{
     align-items: center;
 }
 
-.navbar .logo{
+.navbar .logo {
     height: 7rem;
 }
 
-.navbar .logo img{
+.navbar .logo img {
     height: 100%;
     width: fit-content;
 }
 
-.navbar .navigation{
+.navbar .navigation {
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar .navigation ul{
+.navbar .navigation ul {
     display: flex;
     width: 60%;
     justify-content: space-between;
 }
 
-.navbar .navigation ul li{
+.navbar .navigation ul li {
     list-style: none;
 }
 
@@ -182,31 +185,36 @@ h2{
     transform: scale(2);
 }
 
-.navbar .navigation .cta-group{
+.navbar .navigation .cta-group {
     display: flex;
     gap: 2.4rem;
 }
 
-.navbar .mobile-navitems{
+.navbar .mobile-navitems {
     display: none;
 }
 
-.herosection{
+.herosection {
     width: 100%;
     display: flex;
     height: fit-content;
     position: relative;
+    background-color: #F8EBDA;
 }
 
-.herosection .hero-banner{
+.herosection .hero-banner {
     width: 100%;
     height: fit-content;
 }
 
-.herosection .hero-content{
+.herosection .mobile-hero-banner {
+    display: none;
+}
+
+.herosection .hero-content {
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -215,28 +223,28 @@ h2{
     padding-left: 7.2rem;
 }
 
-.herosection .hero-content .title{
-    color:#573833;
+.herosection .hero-content .title {
+    color: #573833;
     margin-bottom: 1.2rem;
 }
 
-.herosection .hero-content .heading{
+.herosection .hero-content .heading {
     color: #3D3130;
     margin-bottom: 4.2rem;
 }
 
-.herosection .hero-content .btn-group{
+.herosection .hero-content .btn-group {
     display: flex;
     gap: 3rem;
     margin-bottom: 5.2rem;
 }
 
-.herosection .hero-content .socialmedia-group{
+.herosection .hero-content .socialmedia-group {
     display: flex;
     gap: 3rem;
 }
 
-.herosection .hero-content .socialmedia-group .socialmedia-container{
+.herosection .hero-content .socialmedia-group .socialmedia-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -246,7 +254,7 @@ h2{
     width: 5.2rem;
 }
 
-.herosection .hero-content .socialmedia-group .socialmedia-container svg{
+.herosection .hero-content .socialmedia-group .socialmedia-container svg {
     display: flex;
     height: 2rem;
     width: 2rem;
@@ -254,7 +262,7 @@ h2{
 
 
 
-.reserve-section{
+.reserve-section {
     display: flex;
     height: fit-content;
     width: 100%;
@@ -262,13 +270,19 @@ h2{
     position: relative;
 }
 
-.reserve-section .pizza{
+.reserve-section .pizza {
     display: flex;
     height: fit-content;
     width: 100%;
 }
 
-.reserve-section .reserve-content{
+.reserve-section .mobile-pizza {
+    display: none;
+    height: fit-content;
+    width: 100%;
+}
+
+.reserve-section .reserve-content {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -277,13 +291,13 @@ h2{
     width: 50rem;
 }
 
-.reserve-section .reserve-content h1{
-    color:#F8EBDA;
+.reserve-section .reserve-content h1 {
+    color: #F8EBDA;
     margin-bottom: 3.6rem;
     font-size: 3.6rem;
 }
 
-.section3{
+.section3 {
     padding: 9.6rem 7.2rem;
     display: flex;
     justify-content: space-between;
@@ -291,7 +305,7 @@ h2{
     margin-top: -2px;
 }
 
-.section3 .locations{
+.section3 .locations {
     display: flex;
     width: 50%;
     flex-direction: column;
@@ -299,12 +313,12 @@ h2{
     position: relative;
 }
 
-.section3 .locations h2{
+.section3 .locations h2 {
     color: #F8EBDA;
     margin-bottom: 1.2rem;
 }
 
-.section3 .locations .loc-select-box{
+.section3 .locations .loc-select-box {
     display: flex;
     padding: 1.6rem 2.4rem;
     justify-content: space-between;
@@ -316,7 +330,7 @@ h2{
     cursor: pointer;
 }
 
-.section3 .locations .loc-select-box h4{
+.section3 .locations .loc-select-box h4 {
     color: #F8EBDA;
     font-size: 2rem;
     font-weight: 500;
@@ -335,7 +349,7 @@ h2{
     flex-direction: column;
     padding: 0.6rem;
     justify-content: space-between;
-    background-color: #F8EBDA ;
+    background-color: #F8EBDA;
     width: 50rem;
     border-radius: 4px;
     margin-bottom: 3.6rem;
@@ -359,45 +373,45 @@ h2{
 }
 
 
-.section3 .menu{
+.section3 .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
 }
 
-.section3 .menu h2{
+.section3 .menu h2 {
     color: #F8EBDA;
     margin-bottom: 4.8rem;
 }
 
-.section3 .menu .grid{
+.section3 .menu .grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 80%;
     gap: 10rem;
-   
+
 }
 
-.section3 .menu .grid .item{
+.section3 .menu .grid .item {
     display: flex;
-     width: 10rem;
+    width: 10rem;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
 }
 
-.section3 .menu .grid .item img{
+.section3 .menu .grid .item img {
     width: 9.6rem;
     height: fit-content;
 }
 
-.section3 .menu .grid .item h3{
+.section3 .menu .grid .item h3 {
     color: #F8EBDA;
 }
 
-.footer{
+.footer {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -407,32 +421,32 @@ h2{
     padding: 9.8rem 7.2rem 6rem 7.2rem;
 }
 
-.footer .footer-nav{
+.footer .footer-nav {
     display: flex;
     justify-content: space-between;
     padding-bottom: 5rem;
-     border-bottom: 2px solid #B8A397;
+    border-bottom: 2px solid #B8A397;
 }
 
-.footer .footer-nav .left{
+.footer .footer-nav .left {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.footer .footer-nav .left .company-logo{
+.footer .footer-nav .left .company-logo {
     height: 7rem;
-    width: fit-content; 
+    width: fit-content;
     margin-bottom: 4.8rem;
 }
 
 
-.footer .footer-nav .left .socialmedia-group{
+.footer .footer-nav .left .socialmedia-group {
     display: flex;
     gap: 3rem;
 }
 
-.footer .footer-nav .left .socialmedia-group .socialmedia-container{
+.footer .footer-nav .left .socialmedia-group .socialmedia-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,43 +456,170 @@ h2{
     width: 5.2rem;
 }
 
-.footer .footer-nav .left .socialmedia-group .socialmedia-container svg{
+.footer .footer-nav .left .socialmedia-group .socialmedia-container svg {
     display: flex;
     height: 2rem;
     width: 2rem;
 }
 
-.footer .footer-nav .right{
+.footer .footer-nav .right {
     width: 40%;
     display: flex;
     justify-content: space-between;
 }
 
-.footer .footer-nav .right .footer-navitems{
+.footer .footer-nav .right .footer-navitems {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.footer .footer-nav .right .footer-navitems h3{
-    color:#573833;
+.footer .footer-nav .right .footer-navitems h3 {
+    color: #573833;
 }
 
-.footer .footer-nav .right ul{
+.footer .footer-nav .right ul {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
 }
 
-.footer .footer-nav .right ul li a{
+.footer .footer-nav .right ul li a {
     font-size: 1.6rem;
-    color:#573833;
+    color: #573833;
 }
 
 
 
 @media only screen and (min-width: 1800px) {
-    html{
+    html {
         font-size: 12px;
     }
-  }
+}
+
+@media only screen and (max-width: 560px) {
+    html {
+        font-size: 8px;
+    }
+
+    .navbar {
+        width: 100%;
+        background-color: #F8EBDA;
+        padding: 2rem 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar .navigation {
+        display: none;
+    }
+    .navbar .mobile-navitems {
+        display: flex;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 145%;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        line-height: 110%;
+    }
+
+    .herosection .hero-banner {
+        display: none;
+    }
+
+    .herosection .hero-content {
+        width: 100%;
+        position: absolute;
+        top: 10rem;
+        left: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left:0;
+        padding: 0 1.6rem;
+    }
+
+    .herosection .hero-content .heading {
+        text-align: center;
+    }
+
+    .herosection .mobile-hero-banner {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .reserve-section .pizza {
+        display: none;
+    }
+    .reserve-section .mobile-pizza {
+        display: flex;
+    }
+    .reserve-section .reserve-content {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        padding-left: 3rem;
+        top: 10rem;
+        width: 100%;
+    }
+    .section3 {
+        padding: 9.6rem 3rem;
+    }
+    .section3 .locations {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 10rem;
+    }
+    .section3 .locations .loc-select-box {
+        width: 100%;
+    }
+    .loc-options-popup.active {
+        display: flex;
+        flex-direction: column;
+        padding: 0.6rem;
+        justify-content: space-between;
+        background-color: #F8EBDA;
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 3.6rem;
+    }
+    .section3 {
+        flex-direction: column;
+    }
+
+    .section3 .menu {
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #F8EBDA;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        padding: 9.8rem 3rem 6rem 3rem;
+    }
+
+    .footer .footer-nav {
+        flex-direction: column;
+    }
+    .footer .footer-nav .right {
+        margin-top: 10rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
