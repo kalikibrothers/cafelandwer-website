@@ -275,6 +275,39 @@ h2{
     font-weight: 500;
 }
 
+
+.loc-options-popup {
+    display: none;
+}
+
+.loc-options-popup.active {
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem;
+    justify-content: space-between;
+    background-color: #F8EBDA ;
+    width: 50rem;
+    border-radius: 4px;
+    margin-bottom: 3.6rem;
+}
+
+.loc-options-popup p {
+    font-size: 2rem;
+    padding: 1rem 1.8rem;
+    border-radius: 4px;
+    color: #573833;
+    font-weight: 500;
+}
+
+.loc-options-popup p:hover {
+    background-color: #e2caab;
+}
+
+.loc-options-popup p.selected {
+    background-color: #d5b68d;
+}
+
+
 .section3 .menu{
     display: flex;
     flex-direction: column;
@@ -369,3 +402,4 @@ h2{
     display: flex;
     justify-content: space-between;
 }
+
