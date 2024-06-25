@@ -13,6 +13,11 @@ html{
 
 .body-container{
     width: 100%;
+    background-color: #573833;
+}
+
+li{
+    list-style: none;
 }
 
 a{
@@ -151,7 +156,6 @@ h2{
 .herosection .hero-banner{
     width: 100%;
     height: fit-content;
-    z-index: -1;
 }
 
 .herosection .hero-content{
@@ -203,17 +207,7 @@ h2{
     width: 2rem;
 }
 
-.herosection .hero-content .socialmedia-group a{
-    display: flex;
-    height: 6.2rem;
-    width: 6.2rem;
-}
 
-.herosection .hero-content .socialmedia-group a svg{
-    display: flex;
-    height: 6.2rem;
-    width: 6.2rem;
-}
 
 .reserve-section{
     display: flex;
@@ -256,6 +250,7 @@ h2{
     display: flex;
     width: 50%;
     flex-direction: column;
+    margin-top: 10rem;
 }
 
 .section3 .locations h2{
@@ -278,7 +273,99 @@ h2{
     color: #F8EBDA;
     font-size: 2rem;
     font-weight: 500;
+}
 
+.section3 .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.section3 .menu h2{
+    color: #F8EBDA;
+    margin-bottom: 4.8rem;
+}
+
+.section3 .menu .grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    gap: 10rem;
+   
+}
+
+.section3 .menu .grid .item{
+    display: flex;
+     width: 10rem;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section3 .menu .grid .item img{
+    width: 9.6rem;
+    height: fit-content;
+}
+
+.section3 .menu .grid .item h3{
+    color: #F8EBDA;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F8EBDA;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 9.8rem 7.2rem 6rem 7.2rem;
+}
+
+.footer .footer-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+     border-bottom: 2px solid #B8A397;
+}
+
+.footer .footer-nav .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .footer-nav .left .company-logo{
+    height: 7rem;
+    width: fit-content; 
+    margin-bottom: 4.8rem;
 }
 
 
+.footer .footer-nav .left .socialmedia-group{
+    display: flex;
+    gap: 3rem;
+}
+
+.footer .footer-nav .left .socialmedia-group .socialmedia-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F0E6;
+    border-radius: 6.2rem;
+    height: 5.2rem;
+    width: 5.2rem;
+}
+
+.footer .footer-nav .left .socialmedia-group .socialmedia-container svg{
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+}
+
+.footer .footer-nav .right{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
