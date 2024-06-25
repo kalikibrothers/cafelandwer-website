@@ -30,7 +30,7 @@ const locations = [
 
             $(".loc-select-box > h4").text(location.value);
   
-            // popup.removeClass("active");
+            popup.removeClass("active");
           });
       })
     );

@@ -403,3 +403,33 @@ h2{
     justify-content: space-between;
 }
 
+.footer .footer-nav .right .footer-navitems{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer .footer-nav .right .footer-navitems{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer .footer-nav .right ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.footer .footer-nav .right ul li a{
+    font-size: 1.6rem;
+    color:#573833;
+}
+
+
+
+@media only screen and (min-width: 1800px) {
+    html{
+        font-size: 12rem;
+    }
+  }
