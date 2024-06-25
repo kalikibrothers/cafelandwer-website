@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+}
+
+.body-container{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.primary-btn{
+    display: flex;
+    padding: 1.2rem 1.6rem;
+    border-radius: 0.6rem;
+    background-color: #573833;
+    color: #F8EBDA;
+    font-size: 1.6rem;
+    height: fit-content;
+}
+
+.secondary-btn{
+    display: flex;
+    padding: 1.2rem 1.6rem;
+    border-radius: 0.6rem;
+    border: 1px solid #573833;
+    color: #573833;
+    font-size: 1.6rem;
+    height: fit-content;
+}
+
+
+.navbar{
+    width: 100%;
+    background-color: #F8EBDA;
+    padding: 1.6rem 7.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    height: 7rem;
+}
+
+.navbar .logo img{
+    height: 100%;
+    width: fit-content;
+}
+
+.navbar .navigation{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .navigation ul{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.navbar .navigation ul li{
+    list-style: none;
+}
+
+.navbar .navigation ul li a{
+    text-decoration: none;
+    color: #573833;
+    font-size: 1.6rem;
+}
+
+.navbar .navigation .cta-group{
+    display: flex;
+    gap: 2.4rem;
+}
+
+.navbar .mobile-navitems{
+    display: none;
+}
