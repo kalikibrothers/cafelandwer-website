@@ -8,36 +8,38 @@ const locations = [
     { id: 3053, value: "Spadina" },
     { id: 3602, value: "Front" },
     { id: 3608, value: "Landwer Kitchen Hub – Vaughan" },
-  ];
-  let currentLocationId = locations[0].id;
-  
-  $(() => {
+];
+let currentLocationId = locations[0].id;
+
+$(() => {
     const popup = $(".loc-options-popup").first();
-  
+
+    // Ensure the popup is not active when the page loads
+    popup.removeClass("active");
+
     // Append each location option to the popup
     popup.append(
-      $.map(locations, (location) => {
-        return $("<p>")
-          .addClass("loc-option")
-          .addClass(location.id === currentLocationId ? "selected" : "")
-          .text(location.value)
-          .data("id", location.id)
-          .on("click", function () {
-            currentLocationId = $(this).data("id");
-  
-            $(".loc-option").removeClass("selected");
-            $(this).addClass("selected");
+        $.map(locations, (location) => {
+            return $("<p>")
+                .addClass("loc-option")
+                .addClass(location.id === currentLocationId ? "selected" : "")
+                .text(location.value)
+                .data("id", location.id)
+                .on("click", function () {
+                    currentLocationId = $(this).data("id");
 
-            $(".loc-select-box > h4").text(location.value);
-  
-            popup.removeClass("active");
-          });
-      })
+                    $(".loc-option").removeClass("selected");
+                    $(this).addClass("selected");
+
+                    $(".loc-select-box > h4").text(location.value);
+
+                    popup.removeClass("active");
+                });
+        })
     );
-  
+
     // Toggle the popup on click
     $(".loc-select-box").on("click", () => {
-      popup.toggleClass("active");
+        popup.toggleClass("active");
     });
-  });
-  
+});

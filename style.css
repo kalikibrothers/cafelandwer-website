@@ -33,8 +33,17 @@ a{
     background-color: #573833;
     color: #F8EBDA;
     font-size: 1.6rem;
+    font-weight: 400;
     height: fit-content;
     width: fit-content;
+}
+
+.primary-btn:hover{
+    padding: 1.2rem 1.42rem;
+    background-color: #502925;
+   color: #d5b68d;
+    font-size: 1.65rem;
+    font-weight: 600;
 }
 
 .secondary-btn{
@@ -48,6 +57,13 @@ a{
     width: fit-content;
 }
 
+.secondary-btn:hover{
+    padding: 1.15rem 1.42rem;
+    background-color: #d5b68d;
+    font-size: 1.65rem;
+    font-weight: 600;
+}
+
 .primary-btn-lg{
     display: flex;
     padding: 1.6rem 2.4rem;
@@ -57,6 +73,15 @@ a{
     font-size: 2rem;
     height: fit-content;
     width: fit-content;
+    font-weight: 400;
+}
+
+.primary-btn-lg:hover{
+    padding: 1.55rem 2.08rem;
+    background-color: #502925;
+    color: #d5b68d;
+    font-size: 2.1rem;
+    font-weight: 600;
 }
 
 .primary-btn-light{
@@ -70,6 +95,11 @@ a{
     width: fit-content;
 }
 
+.primary-btn-light:hover{
+    background-color: #d5b68d;
+    font-weight: 600;
+}
+
 .secondary-btn-lg{
     display: flex;
     padding: 1.6rem 2.4rem;
@@ -79,6 +109,13 @@ a{
     font-size: 2rem;
     height: fit-content;
     width: fit-content;
+}
+
+.secondary-btn-lg:hover{
+    padding: 1.55rem 1.97rem;
+    background-color: #d5b68d;
+    font-size: 2.1rem;
+    font-weight: 600;
 }
 
 h3{
@@ -131,10 +168,18 @@ h2{
     list-style: none;
 }
 
-.navbar .navigation ul li a{
+.navbar .navigation ul li a {
     text-decoration: none;
-    color: #573833;
+    color: #470c03;
     font-size: 1.6rem;
+    transition: color 0.2s ease, transform 0.2s ease, font-weight 0.2s ease font-size 0.3s ease;
+}
+
+.navbar .navigation ul li a:hover {
+    color: #502925;
+    font-weight: 700;
+    font-size: 1.62rem;
+    transform: scale(2);
 }
 
 .navbar .navigation .cta-group{
@@ -251,6 +296,7 @@ h2{
     width: 50%;
     flex-direction: column;
     margin-top: 10rem;
+    position: relative;
 }
 
 .section3 .locations h2{
@@ -267,6 +313,7 @@ h2{
     width: 50rem;
     border-radius: 4px;
     margin-bottom: 3.6rem;
+    cursor: pointer;
 }
 
 .section3 .locations .loc-select-box h4{
@@ -278,6 +325,9 @@ h2{
 
 .loc-options-popup {
     display: none;
+    position: absolute;
+    top: 10rem;
+    left: 0;
 }
 
 .loc-options-popup.active {
@@ -297,6 +347,7 @@ h2{
     border-radius: 4px;
     color: #573833;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .loc-options-popup p:hover {
@@ -409,16 +460,14 @@ h2{
     gap: 2rem;
 }
 
-.footer .footer-nav .right .footer-navitems{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.footer .footer-nav .right .footer-navitems h3{
+    color:#573833;
 }
 
 .footer .footer-nav .right ul{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.6rem;
 }
 
 .footer .footer-nav .right ul li a{
