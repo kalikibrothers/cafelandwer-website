@@ -516,6 +516,14 @@ h2 {
     .navbar .mobile-navitems {
         display: flex;
     }
+    .navbar .logo {
+        height: 4rem;
+    }
+    
+    .navbar .logo img {
+        height: 100%;
+        width: fit-content;
+    }
     h3 {
         font-size: 1.6rem;
     }
